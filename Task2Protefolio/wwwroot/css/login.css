@@ -1,0 +1,98 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+
+#admin-login h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#admin-login input[type="text"],
+#admin-login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: #fff;
+    transition: background 0.3s ease-in-out;
+}
+
+    #admin-login input[type="text"]:focus,
+    #admin-login input[type="password"]:focus {
+        background: #333;
+        outline: none;
+    }
+
+#admin-login button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #ff6f61; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+    #admin-login button:hover {
+        background: #ff9800;
+    }
+
+.links {
+    margin-top: 20px;
+}
+
+    .links p {
+        margin: 10px 0;
+    }
+
+    .links a {
+        color: #ff6f61;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+    }
+
+        .links a:hover {
+            color: #ff9800;
+        }
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link href="../css/login.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <section id="admin-login">
+        <div class="container">
+            <h2>Admin Login</h2>
+            <form id="loginForm" method="post">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <div class="links">
+                <p id="message"></p>
+                <p>you cant Register here, this page for admin</p>
+            </div>
+        </div>
+    </section>
+    <script src="../js/loginAndRegister.js"></script>
+</body>
+</html>
+

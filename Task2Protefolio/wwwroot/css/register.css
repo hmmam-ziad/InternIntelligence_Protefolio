@@ -1,0 +1,114 @@
+﻿/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #000; /* خلفية سوداء */
+    color: #fff; /* نص أبيض */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Admin Register Section */
+#admin-register h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#admin-register p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #aaa;
+}
+
+#admin-register label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #fff;
+}
+
+#admin-register input[type="text"],
+#admin-register input[type="email"],
+#admin-register input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: #fff;
+    transition: background 0.3s ease-in-out;
+}
+
+    #admin-register input[type="text"]:focus,
+    #admin-register input[type="email"]:focus,
+    #admin-register input[type="password"]:focus {
+        background: #333;
+        outline: none;
+    }
+
+#admin-register button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #ff6f61; /* زر أحمر مشرق */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+    #admin-register button:hover {
+        background: #ff9800; /* تغيير اللون عند مرور الماوس */
+    }
+
+.links {
+    margin-top: 20px;
+}
+
+    .links p {
+        margin: 10px 0;
+    }
+
+    .links a {
+        color: #ff6f61;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+    }
+
+        .links a:hover {
+            color: #ff9800;
+        }
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
